@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\Api;
+namespace flagbit\sevdesk\phpclient\Api;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \flagbit\sevdesk\phpclient\ApiClient;
+use \flagbit\sevdesk\phpclient\ApiException;
+use \flagbit\sevdesk\phpclient\Configuration;
+use \flagbit\sevdesk\phpclient\ObjectSerializer;
 
 /**
  * AccountingSystemNumberApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class AccountingSystemNumberApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \flagbit\sevdesk\phpclient\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \flagbit\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\flagbit\sevdesk\phpclient\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class AccountingSystemNumberApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \flagbit\sevdesk\phpclient\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class AccountingSystemNumberApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \flagbit\sevdesk\phpclient\ApiClient $apiClient set the API client
      *
      * @return AccountingSystemNumberApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\flagbit\sevdesk\phpclient\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -93,8 +93,8 @@ class AccountingSystemNumberApi
      * Create a new accounting system number
      *
      * @param string $body To create an accounting system number, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return \flagbit\sevdesk\phpclient\Model\ModelAccountingSystemNumber
      */
     public function addAccountingSystemNumber($body)
     {
@@ -108,8 +108,8 @@ class AccountingSystemNumberApi
      * Create a new accounting system number
      *
      * @param string $body To create an accounting system number, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber, HTTP status code, HTTP response headers (array of strings)
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return array of \flagbit\sevdesk\phpclient\Model\ModelAccountingSystemNumber, HTTP status code, HTTP response headers (array of strings)
      */
     public function addAccountingSystemNumberWithHttpInfo($body)
     {
@@ -154,15 +154,15 @@ class AccountingSystemNumberApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber',
+                '\flagbit\sevdesk\phpclient\Model\ModelAccountingSystemNumber',
                 '/AccountingSystemNumber'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\flagbit\sevdesk\phpclient\Model\ModelAccountingSystemNumber', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\flagbit\sevdesk\phpclient\Model\ModelAccountingSystemNumber', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -177,7 +177,7 @@ class AccountingSystemNumberApi
      * Delete an existing accounting system number
      *
      * @param int $id id of accounting system number you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
      * @return void
      */
     public function deleteAccountingSystemNumber($id)
@@ -192,7 +192,7 @@ class AccountingSystemNumberApi
      * Delete an existing accounting system number
      *
      * @param int $id id of accounting system number you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteAccountingSystemNumberWithHttpInfo($id)
@@ -262,8 +262,8 @@ class AccountingSystemNumberApi
      * @param int $limit Limits the number of entries returned. Default is 1000 (optional, default to 1000)
      * @param int $offset Set the index where the returned accounting system numbers start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return \flagbit\sevdesk\phpclient\Model\ModelAccountingSystemNumber
      */
     public function getAccountingSystemNumbers($limit = '1000', $offset = '0', $embed = null)
     {
@@ -279,8 +279,8 @@ class AccountingSystemNumberApi
      * @param int $limit Limits the number of entries returned. Default is 1000 (optional, default to 1000)
      * @param int $offset Set the index where the returned accounting system numbers start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber, HTTP status code, HTTP response headers (array of strings)
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return array of \flagbit\sevdesk\phpclient\Model\ModelAccountingSystemNumber, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAccountingSystemNumbersWithHttpInfo($limit = '1000', $offset = '0', $embed = null)
     {
@@ -331,15 +331,15 @@ class AccountingSystemNumberApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber',
+                '\flagbit\sevdesk\phpclient\Model\ModelAccountingSystemNumber',
                 '/AccountingSystemNumber'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\flagbit\sevdesk\phpclient\Model\ModelAccountingSystemNumber', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\flagbit\sevdesk\phpclient\Model\ModelAccountingSystemNumber', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -355,8 +355,8 @@ class AccountingSystemNumberApi
      *
      * @param int $id id of accounting system number you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create accounting system number.    Append the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; and remove the quotation marks! (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return \flagbit\sevdesk\phpclient\Model\ModelAccountingType
      */
     public function updateAccountingSystemNumber($id, $body = null)
     {
@@ -371,8 +371,8 @@ class AccountingSystemNumberApi
      *
      * @param int $id id of accounting system number you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create accounting system number.    Append the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; and remove the quotation marks! (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType, HTTP status code, HTTP response headers (array of strings)
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return array of \flagbit\sevdesk\phpclient\Model\ModelAccountingType, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateAccountingSystemNumberWithHttpInfo($id, $body = null)
     {
@@ -425,15 +425,15 @@ class AccountingSystemNumberApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType',
+                '\flagbit\sevdesk\phpclient\Model\ModelAccountingType',
                 '/AccountingSystemNumber/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\flagbit\sevdesk\phpclient\Model\ModelAccountingType', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\flagbit\sevdesk\phpclient\Model\ModelAccountingType', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

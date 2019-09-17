@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\Model;
+namespace flagbit\sevdesk\phpclient\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelOrderPos Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     flagbit\sevdesk\phpclient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,13 +56,13 @@ class ModelOrderPos implements ArrayAccess
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
         '_update' => '\DateTime',
-        '_order' => '\ispserverfarm\sevdesk\phpclient\Model\ModelOrder',
-        '_part' => '\ispserverfarm\sevdesk\phpclient\Model\ModelPart',
+        '_order' => '\flagbit\sevdesk\phpclient\Model\ModelOrder',
+        '_part' => '\flagbit\sevdesk\phpclient\Model\ModelPart',
         '_quantity' => 'float',
         '_price' => 'float',
         '_name' => 'string',
         '_priority' => 'int',
-        '_unity' => '\ispserverfarm\sevdesk\phpclient\Model\ModelUnity',
+        '_unity' => '\flagbit\sevdesk\phpclient\Model\ModelUnity',
         '_sev_client' => 'object',
         '_position_number' => 'int',
         '_text' => 'string',
@@ -312,7 +312,7 @@ class ModelOrderPos implements ArrayAccess
 
     /**
      * Gets _order
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelOrder
+     * @return \flagbit\sevdesk\phpclient\Model\ModelOrder
      */
     public function getOrder()
     {
@@ -321,7 +321,7 @@ class ModelOrderPos implements ArrayAccess
 
     /**
      * Sets _order
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelOrder $_order Model_Order the position belongs to
+     * @param \flagbit\sevdesk\phpclient\Model\ModelOrder $_order Model_Order the position belongs to
      * @return $this
      */
     public function setOrder($_order)
@@ -333,7 +333,7 @@ class ModelOrderPos implements ArrayAccess
 
     /**
      * Gets _part
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelPart
+     * @return \flagbit\sevdesk\phpclient\Model\ModelPart
      */
     public function getPart()
     {
@@ -342,7 +342,7 @@ class ModelOrderPos implements ArrayAccess
 
     /**
      * Sets _part
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelPart $_part The Model_Part which is used in Model_OrderPos
+     * @param \flagbit\sevdesk\phpclient\Model\ModelPart $_part The Model_Part which is used in Model_OrderPos
      * @return $this
      */
     public function setPart($_part)
@@ -438,7 +438,7 @@ class ModelOrderPos implements ArrayAccess
 
     /**
      * Gets _unity
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelUnity
+     * @return \flagbit\sevdesk\phpclient\Model\ModelUnity
      */
     public function getUnity()
     {
@@ -447,7 +447,7 @@ class ModelOrderPos implements ArrayAccess
 
     /**
      * Sets _unity
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelUnity $_unity 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelUnity $_unity
      * @return $this
      */
     public function setUnity($_unity)
@@ -718,10 +718,10 @@ class ModelOrderPos implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

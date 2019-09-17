@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace ispserverfarm\sevdesk\phpclient;
+namespace flagbit\sevdesk\phpclient;
 
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \flagbit\sevdesk\phpclient\Configuration;
+use \flagbit\sevdesk\phpclient\ApiClient;
+use \flagbit\sevdesk\phpclient\ApiException;
+use \flagbit\sevdesk\phpclient\ObjectSerializer;
 
 /**
  * TaxSetApiTest Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

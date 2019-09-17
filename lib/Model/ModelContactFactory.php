@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\Model;
+namespace flagbit\sevdesk\phpclient\Model;
 
 use \ArrayAccess;
 
@@ -36,7 +36,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description Below are the models which can be used for the functions in Contact/Factory.php. Beware that you need to use them without the underscore at the beginning!
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     flagbit\sevdesk\phpclient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -55,7 +55,7 @@ class ModelContactFactory implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'contact' => '\ispserverfarm\sevdesk\phpclient\Model\ModelContact'
+        'contact' => '\flagbit\sevdesk\phpclient\Model\ModelContact'
     ];
 
     /**
@@ -163,7 +163,7 @@ class ModelContactFactory implements ArrayAccess
 
     /**
      * Gets contact
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelContact
+     * @return \flagbit\sevdesk\phpclient\Model\ModelContact
      */
     public function getContact()
     {
@@ -172,7 +172,7 @@ class ModelContactFactory implements ArrayAccess
 
     /**
      * Sets contact
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelContact $contact here you can find useful parameters for your contact requests
+     * @param \flagbit\sevdesk\phpclient\Model\ModelContact $contact here you can find useful parameters for your contact requests
      * @return $this
      */
     public function setContact($contact)
@@ -233,10 +233,10 @@ class ModelContactFactory implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

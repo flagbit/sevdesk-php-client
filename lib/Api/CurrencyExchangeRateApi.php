@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\Api;
+namespace flagbit\sevdesk\phpclient\Api;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \flagbit\sevdesk\phpclient\ApiClient;
+use \flagbit\sevdesk\phpclient\ApiException;
+use \flagbit\sevdesk\phpclient\Configuration;
+use \flagbit\sevdesk\phpclient\ObjectSerializer;
 
 /**
  * CurrencyExchangeRateApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class CurrencyExchangeRateApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \flagbit\sevdesk\phpclient\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \flagbit\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\flagbit\sevdesk\phpclient\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class CurrencyExchangeRateApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \flagbit\sevdesk\phpclient\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class CurrencyExchangeRateApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \flagbit\sevdesk\phpclient\ApiClient $apiClient set the API client
      *
      * @return CurrencyExchangeRateApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\flagbit\sevdesk\phpclient\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -94,8 +94,8 @@ class CurrencyExchangeRateApi
      *
      * @param int $limit Limits the number of entries returned. Default is 1000.    Be aware that there are over 100000 entries in the database for currency exchange rate, so using a limit higher than 1000 with offset&#x3D;0 is not recommended!    However you can set the offset appropriately so you minimize the amount of returned exchange rates and keep loading time to a low. (optional, default to 1000)
      * @param int $offset Set the index where the returned currency exchange rates start. Default is 0 (optional, default to 0)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelCurrencyExchangeRate
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return \flagbit\sevdesk\phpclient\Model\ModelCurrencyExchangeRate
      */
     public function getCurrencyExchangeRates($limit = '1000', $offset = '0')
     {
@@ -110,8 +110,8 @@ class CurrencyExchangeRateApi
      *
      * @param int $limit Limits the number of entries returned. Default is 1000.    Be aware that there are over 100000 entries in the database for currency exchange rate, so using a limit higher than 1000 with offset&#x3D;0 is not recommended!    However you can set the offset appropriately so you minimize the amount of returned exchange rates and keep loading time to a low. (optional, default to 1000)
      * @param int $offset Set the index where the returned currency exchange rates start. Default is 0 (optional, default to 0)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\Model\ModelCurrencyExchangeRate, HTTP status code, HTTP response headers (array of strings)
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return array of \flagbit\sevdesk\phpclient\Model\ModelCurrencyExchangeRate, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCurrencyExchangeRatesWithHttpInfo($limit = '1000', $offset = '0')
     {
@@ -155,15 +155,15 @@ class CurrencyExchangeRateApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\Model\ModelCurrencyExchangeRate',
+                '\flagbit\sevdesk\phpclient\Model\ModelCurrencyExchangeRate',
                 '/CurrencyExchangeRate'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\Model\ModelCurrencyExchangeRate', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\flagbit\sevdesk\phpclient\Model\ModelCurrencyExchangeRate', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\Model\ModelCurrencyExchangeRate', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\flagbit\sevdesk\phpclient\Model\ModelCurrencyExchangeRate', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

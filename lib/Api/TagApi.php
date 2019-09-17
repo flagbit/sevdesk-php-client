@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\Api;
+namespace flagbit\sevdesk\phpclient\Api;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \flagbit\sevdesk\phpclient\ApiClient;
+use \flagbit\sevdesk\phpclient\ApiException;
+use \flagbit\sevdesk\phpclient\Configuration;
+use \flagbit\sevdesk\phpclient\ObjectSerializer;
 
 /**
  * TagApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class TagApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \flagbit\sevdesk\phpclient\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \flagbit\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\flagbit\sevdesk\phpclient\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class TagApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \flagbit\sevdesk\phpclient\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class TagApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \flagbit\sevdesk\phpclient\ApiClient $apiClient set the API client
      *
      * @return TagApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\flagbit\sevdesk\phpclient\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -93,8 +93,8 @@ class TagApi
      * Create a new tag
      *
      * @param string $body To create a tag, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelTag
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return \flagbit\sevdesk\phpclient\Model\ModelTag
      */
     public function addTag($body)
     {
@@ -108,8 +108,8 @@ class TagApi
      * Create a new tag
      *
      * @param string $body To create a tag, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\Model\ModelTag, HTTP status code, HTTP response headers (array of strings)
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return array of \flagbit\sevdesk\phpclient\Model\ModelTag, HTTP status code, HTTP response headers (array of strings)
      */
     public function addTagWithHttpInfo($body)
     {
@@ -154,15 +154,15 @@ class TagApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\Model\ModelTag',
+                '\flagbit\sevdesk\phpclient\Model\ModelTag',
                 '/Tag'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\Model\ModelTag', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\flagbit\sevdesk\phpclient\Model\ModelTag', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\Model\ModelTag', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\flagbit\sevdesk\phpclient\Model\ModelTag', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -177,7 +177,7 @@ class TagApi
      * Delete an existing tag
      *
      * @param int $id Id of tag you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
      * @return void
      */
     public function deleteTag($id)
@@ -192,7 +192,7 @@ class TagApi
      * Delete an existing tag
      *
      * @param int $id Id of tag you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteTagWithHttpInfo($id)
@@ -262,8 +262,8 @@ class TagApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned tags start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelTag
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return \flagbit\sevdesk\phpclient\Model\ModelTag
      */
     public function getTags($limit = '100', $offset = '0', $embed = null)
     {
@@ -279,8 +279,8 @@ class TagApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned tags start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\Model\ModelTag, HTTP status code, HTTP response headers (array of strings)
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return array of \flagbit\sevdesk\phpclient\Model\ModelTag, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTagsWithHttpInfo($limit = '100', $offset = '0', $embed = null)
     {
@@ -331,15 +331,15 @@ class TagApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\Model\ModelTag',
+                '\flagbit\sevdesk\phpclient\Model\ModelTag',
                 '/Tag'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\Model\ModelTag', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\flagbit\sevdesk\phpclient\Model\ModelTag', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\Model\ModelTag', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\flagbit\sevdesk\phpclient\Model\ModelTag', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -355,8 +355,8 @@ class TagApi
      *
      * @param int $id Id of tag you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create tag.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelTag
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return \flagbit\sevdesk\phpclient\Model\ModelTag
      */
     public function updateTag($id, $body = null)
     {
@@ -371,8 +371,8 @@ class TagApi
      *
      * @param int $id Id of tag you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create tag.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\Model\ModelTag, HTTP status code, HTTP response headers (array of strings)
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return array of \flagbit\sevdesk\phpclient\Model\ModelTag, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateTagWithHttpInfo($id, $body = null)
     {
@@ -425,15 +425,15 @@ class TagApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\Model\ModelTag',
+                '\flagbit\sevdesk\phpclient\Model\ModelTag',
                 '/Tag/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\Model\ModelTag', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\flagbit\sevdesk\phpclient\Model\ModelTag', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\Model\ModelTag', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\flagbit\sevdesk\phpclient\Model\ModelTag', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

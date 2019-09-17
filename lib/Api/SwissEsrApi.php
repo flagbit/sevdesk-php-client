@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\Api;
+namespace flagbit\sevdesk\phpclient\Api;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \flagbit\sevdesk\phpclient\ApiClient;
+use \flagbit\sevdesk\phpclient\ApiException;
+use \flagbit\sevdesk\phpclient\Configuration;
+use \flagbit\sevdesk\phpclient\ObjectSerializer;
 
 /**
  * SwissEsrApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class SwissEsrApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \flagbit\sevdesk\phpclient\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \flagbit\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\flagbit\sevdesk\phpclient\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class SwissEsrApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \flagbit\sevdesk\phpclient\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class SwissEsrApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \flagbit\sevdesk\phpclient\ApiClient $apiClient set the API client
      *
      * @return SwissEsrApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\flagbit\sevdesk\phpclient\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -92,8 +92,8 @@ class SwissEsrApi
      *
      * Get an overview of swiss esr
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelSwissEsr
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return \flagbit\sevdesk\phpclient\Model\ModelSwissEsr
      */
     public function getSwissEsr()
     {
@@ -106,8 +106,8 @@ class SwissEsrApi
      *
      * Get an overview of swiss esr
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\Model\ModelSwissEsr, HTTP status code, HTTP response headers (array of strings)
+     * @throws \flagbit\sevdesk\phpclient\ApiException on non-2xx response
+     * @return array of \flagbit\sevdesk\phpclient\Model\ModelSwissEsr, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSwissEsrWithHttpInfo()
     {
@@ -143,15 +143,15 @@ class SwissEsrApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\Model\ModelSwissEsr',
+                '\flagbit\sevdesk\phpclient\Model\ModelSwissEsr',
                 '/SwissEsr'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\Model\ModelSwissEsr', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\flagbit\sevdesk\phpclient\Model\ModelSwissEsr', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\Model\ModelSwissEsr', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\flagbit\sevdesk\phpclient\Model\ModelSwissEsr', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

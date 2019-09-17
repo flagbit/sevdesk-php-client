@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\Model;
+namespace flagbit\sevdesk\phpclient\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelCategory Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     flagbit\sevdesk\phpclient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ModelCategory implements ArrayAccess
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
         '_update' => '\DateTime',
-        '_parent' => '\ispserverfarm\sevdesk\phpclient\Model\ModelCategory',
+        '_parent' => '\flagbit\sevdesk\phpclient\Model\ModelCategory',
         '_name' => 'string',
         '_object_type' => 'string',
         '_priority' => 'int',
@@ -66,7 +66,7 @@ class ModelCategory implements ArrayAccess
         '_posting_account' => 'string',
         '_type' => 'string',
         '_translation_code' => 'string',
-        '_entry_type' => '\ispserverfarm\sevdesk\phpclient\Model\ModelEntryType'
+        '_entry_type' => '\flagbit\sevdesk\phpclient\Model\ModelEntryType'
     ];
 
     /**
@@ -276,7 +276,7 @@ class ModelCategory implements ArrayAccess
 
     /**
      * Gets _parent
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelCategory
+     * @return \flagbit\sevdesk\phpclient\Model\ModelCategory
      */
     public function getParent()
     {
@@ -285,7 +285,7 @@ class ModelCategory implements ArrayAccess
 
     /**
      * Sets _parent
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelCategory $_parent 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelCategory $_parent
      * @return $this
      */
     public function setParent($_parent)
@@ -486,7 +486,7 @@ class ModelCategory implements ArrayAccess
 
     /**
      * Gets _entry_type
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelEntryType
+     * @return \flagbit\sevdesk\phpclient\Model\ModelEntryType
      */
     public function getEntryType()
     {
@@ -495,7 +495,7 @@ class ModelCategory implements ArrayAccess
 
     /**
      * Sets _entry_type
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelEntryType $_entry_type 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelEntryType $_entry_type
      * @return $this
      */
     public function setEntryType($_entry_type)
@@ -556,10 +556,10 @@ class ModelCategory implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

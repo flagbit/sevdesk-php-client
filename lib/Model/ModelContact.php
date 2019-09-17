@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\Model;
+namespace flagbit\sevdesk\phpclient\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelContact Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     flagbit\sevdesk\phpclient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -55,17 +55,17 @@ class ModelContact implements ArrayAccess
       */
     protected static $swaggerTypes = [
         '_id' => 'int',
-        '_address' => '\ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress',
+        '_address' => '\flagbit\sevdesk\phpclient\Model\ModelContactAddress',
         '_create' => '\DateTime',
         '_update' => '\DateTime',
         '_name' => 'string',
         '_status' => 'int',
         '_customer_number' => 'int',
-        '_parent' => '\ispserverfarm\sevdesk\phpclient\Model\ModelContact',
+        '_parent' => '\flagbit\sevdesk\phpclient\Model\ModelContact',
         '_surename' => 'string',
         '_familyname' => 'string',
         '_titel' => 'string',
-        '_category' => '\ispserverfarm\sevdesk\phpclient\Model\ModelCategory',
+        '_category' => '\flagbit\sevdesk\phpclient\Model\ModelCategory',
         '_description' => 'string',
         '_academic_title' => 'string',
         '_gender' => 'string',
@@ -75,8 +75,8 @@ class ModelContact implements ArrayAccess
         '_vat_number' => 'string',
         '_bank_account' => 'string',
         '_bank_number' => 'string',
-        '_payment_method' => '\ispserverfarm\sevdesk\phpclient\Model\ModelPaymentMethod',
-        '_entry_type' => '\ispserverfarm\sevdesk\phpclient\Model\ModelEntryType',
+        '_payment_method' => '\flagbit\sevdesk\phpclient\Model\ModelPaymentMethod',
+        '_entry_type' => '\flagbit\sevdesk\phpclient\Model\ModelEntryType',
         '_default_cashback_time' => 'int',
         '_default_cashback_percent' => 'int',
         '_default_time_to_pay' => 'int',
@@ -346,7 +346,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Gets _address
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress
+     * @return \flagbit\sevdesk\phpclient\Model\ModelContactAddress
      */
     public function getAddress()
     {
@@ -355,7 +355,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Sets _address
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress $_address the contact address
+     * @param \flagbit\sevdesk\phpclient\Model\ModelContactAddress $_address the contact address
      * @return $this
      */
     public function setAddress($_address)
@@ -472,7 +472,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Gets _parent
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelContact
+     * @return \flagbit\sevdesk\phpclient\Model\ModelContact
      */
     public function getParent()
     {
@@ -481,7 +481,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Sets _parent
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelContact $_parent 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelContact $_parent
      * @return $this
      */
     public function setParent($_parent)
@@ -556,7 +556,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Gets _category
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelCategory
+     * @return \flagbit\sevdesk\phpclient\Model\ModelCategory
      */
     public function getCategory()
     {
@@ -565,7 +565,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Sets _category
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelCategory $_category category of the contact
+     * @param \flagbit\sevdesk\phpclient\Model\ModelCategory $_category category of the contact
      * @return $this
      */
     public function setCategory($_category)
@@ -766,7 +766,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Gets _payment_method
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelPaymentMethod
+     * @return \flagbit\sevdesk\phpclient\Model\ModelPaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -775,7 +775,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Sets _payment_method
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelPaymentMethod $_payment_method desired payment method of the customer
+     * @param \flagbit\sevdesk\phpclient\Model\ModelPaymentMethod $_payment_method desired payment method of the customer
      * @return $this
      */
     public function setPaymentMethod($_payment_method)
@@ -787,7 +787,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Gets _entry_type
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelEntryType
+     * @return \flagbit\sevdesk\phpclient\Model\ModelEntryType
      */
     public function getEntryType()
     {
@@ -796,7 +796,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Sets _entry_type
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelEntryType $_entry_type 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelEntryType $_entry_type
      * @return $this
      */
     public function setEntryType($_entry_type)
@@ -962,10 +962,10 @@ class ModelContact implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

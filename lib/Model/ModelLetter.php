@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\Model;
+namespace flagbit\sevdesk\phpclient\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelLetter Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     flagbit\sevdesk\phpclient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class ModelLetter implements ArrayAccess
         '_create' => '\DateTime',
         '_update' => '\DateTime',
         '_letter_number' => 'string',
-        '_contact' => '\ispserverfarm\sevdesk\phpclient\Model\ModelContact',
+        '_contact' => '\flagbit\sevdesk\phpclient\Model\ModelContact',
         '_letter_date' => '\DateTime',
         '_header' => 'string',
         '_address_name' => 'string',
@@ -65,12 +65,12 @@ class ModelLetter implements ArrayAccess
         '_address_street' => 'string',
         'address_zip' => 'string',
         '_address_city' => 'string',
-        '_address_country' => '\ispserverfarm\sevdesk\phpclient\Model\ModelStaticCountry',
+        '_address_country' => '\flagbit\sevdesk\phpclient\Model\ModelStaticCountry',
         '_sev_client' => 'object',
         '_status' => 'int',
-        '_contact_person' => '\ispserverfarm\sevdesk\phpclient\Model\ModelSevUser',
+        '_contact_person' => '\flagbit\sevdesk\phpclient\Model\ModelSevUser',
         '_address_parent_name' => 'string',
-        '_address_contact_ref' => '\ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress',
+        '_address_contact_ref' => '\flagbit\sevdesk\phpclient\Model\ModelContactAddress',
         '_text' => 'string',
         '_send_date' => '\DateTime',
         '_address_parent_name2' => 'string',
@@ -357,7 +357,7 @@ class ModelLetter implements ArrayAccess
 
     /**
      * Gets _contact
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelContact
+     * @return \flagbit\sevdesk\phpclient\Model\ModelContact
      */
     public function getContact()
     {
@@ -366,7 +366,7 @@ class ModelLetter implements ArrayAccess
 
     /**
      * Sets _contact
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelContact $_contact 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelContact $_contact 
      * @return $this
      */
     public function setContact($_contact)
@@ -525,7 +525,7 @@ class ModelLetter implements ArrayAccess
 
     /**
      * Gets _address_country
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelStaticCountry
+     * @return \flagbit\sevdesk\phpclient\Model\ModelStaticCountry
      */
     public function getAddressCountry()
     {
@@ -534,7 +534,7 @@ class ModelLetter implements ArrayAccess
 
     /**
      * Sets _address_country
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelStaticCountry $_address_country 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelStaticCountry $_address_country 
      * @return $this
      */
     public function setAddressCountry($_address_country)
@@ -588,7 +588,7 @@ class ModelLetter implements ArrayAccess
 
     /**
      * Gets _contact_person
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelSevUser
+     * @return \flagbit\sevdesk\phpclient\Model\ModelSevUser
      */
     public function getContactPerson()
     {
@@ -597,7 +597,7 @@ class ModelLetter implements ArrayAccess
 
     /**
      * Sets _contact_person
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelSevUser $_contact_person 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelSevUser $_contact_person 
      * @return $this
      */
     public function setContactPerson($_contact_person)
@@ -630,7 +630,7 @@ class ModelLetter implements ArrayAccess
 
     /**
      * Gets _address_contact_ref
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress
+     * @return \flagbit\sevdesk\phpclient\Model\ModelContactAddress
      */
     public function getAddressContactRef()
     {
@@ -639,7 +639,7 @@ class ModelLetter implements ArrayAccess
 
     /**
      * Sets _address_contact_ref
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress $_address_contact_ref reference to Model_ContactAddress
+     * @param \flagbit\sevdesk\phpclient\Model\ModelContactAddress $_address_contact_ref reference to Model_ContactAddress
      * @return $this
      */
     public function setAddressContactRef($_address_contact_ref)
@@ -826,10 +826,10 @@ class ModelLetter implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

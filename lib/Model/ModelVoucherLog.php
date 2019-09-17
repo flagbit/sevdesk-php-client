@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\Model;
+namespace flagbit\sevdesk\phpclient\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelVoucherLog Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     flagbit\sevdesk\phpclient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -55,7 +55,7 @@ class ModelVoucherLog implements ArrayAccess
       */
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
-        '_voucher' => '\ispserverfarm\sevdesk\phpclient\Model\ModelVoucher',
+        '_voucher' => '\flagbit\sevdesk\phpclient\Model\ModelVoucher',
         '_from_status' => 'int',
         '_to_status' => 'int',
         '_amount_payed' => 'float',
@@ -219,7 +219,7 @@ class ModelVoucherLog implements ArrayAccess
 
     /**
      * Gets _voucher
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelVoucher
+     * @return \flagbit\sevdesk\phpclient\Model\ModelVoucher
      */
     public function getVoucher()
     {
@@ -228,7 +228,7 @@ class ModelVoucherLog implements ArrayAccess
 
     /**
      * Sets _voucher
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelVoucher $_voucher voucher to which the log belongs
+     * @param \flagbit\sevdesk\phpclient\Model\ModelVoucher $_voucher voucher to which the log belongs
      * @return $this
      */
     public function setVoucher($_voucher)
@@ -394,10 +394,10 @@ class ModelVoucherLog implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\StaticReferralProgramApi
+# flagbit\sevdesk\phpclient\StaticReferralProgramApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getStaticReferralPrograms**
-> \ispserverfarm\sevdesk\phpclient\Model\ModelStaticReferralProgram getStaticReferralPrograms()
+> \flagbit\sevdesk\phpclient\Model\ModelStaticReferralProgram getStaticReferralPrograms()
 
 Get staticReferralProgram list
 
@@ -20,11 +20,11 @@ Calls StaticReferralProgram.php to return the staticReferralProgram list which i
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+flagbit\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// flagbit\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\StaticReferralProgramApi();
+$api_instance = new flagbit\sevdesk\phpclient\Api\StaticReferralProgramApi();
 
 try {
     $result = $api_instance->getStaticReferralPrograms();
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\Model\ModelStaticReferralProgram**](../Model/ModelStaticReferralProgram.md)
+[**\flagbit\sevdesk\phpclient\Model\ModelStaticReferralProgram**](../Model/ModelStaticReferralProgram.md)
 
 ### Authorization
 

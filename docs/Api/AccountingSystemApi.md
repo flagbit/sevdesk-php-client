@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\AccountingSystemApi
+# flagbit\sevdesk\phpclient\AccountingSystemApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getAccountingSystems**
-> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystem getAccountingSystems($limit, $offset, $embed)
+> \flagbit\sevdesk\phpclient\Model\ModelAccountingSystem getAccountingSystems($limit, $offset, $embed)
 
 Get an overview of all accounting systems
 
@@ -20,11 +20,11 @@ Calls AccountingSystem.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+flagbit\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// flagbit\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingSystemApi();
+$api_instance = new flagbit\sevdesk\phpclient\Api\AccountingSystemApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned accounting systems start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystem**](../Model/ModelAccountingSystem.md)
+[**\flagbit\sevdesk\phpclient\Model\ModelAccountingSystem**](../Model/ModelAccountingSystem.md)
 
 ### Authorization
 

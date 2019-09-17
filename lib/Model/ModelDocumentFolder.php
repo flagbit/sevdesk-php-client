@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\Model;
+namespace flagbit\sevdesk\phpclient\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelDocumentFolder Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     flagbit\sevdesk\phpclient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class ModelDocumentFolder implements ArrayAccess
         '_create' => '\DateTime',
         '_update' => '\DateTime',
         '_name' => 'string',
-        '_parent' => '\ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder',
+        '_parent' => '\flagbit\sevdesk\phpclient\Model\ModelDocumentFolder',
         '_sev_client' => 'object',
         '_object' => 'object',
         '_status' => 'int',
@@ -267,7 +267,7 @@ class ModelDocumentFolder implements ArrayAccess
 
     /**
      * Gets _parent
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder
+     * @return \flagbit\sevdesk\phpclient\Model\ModelDocumentFolder
      */
     public function getParent()
     {
@@ -276,7 +276,7 @@ class ModelDocumentFolder implements ArrayAccess
 
     /**
      * Sets _parent
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder $_parent 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelDocumentFolder $_parent 
      * @return $this
      */
     public function setParent($_parent)
@@ -421,10 +421,10 @@ class ModelDocumentFolder implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

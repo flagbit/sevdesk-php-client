@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\Model;
+namespace flagbit\sevdesk\phpclient\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelPart Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     flagbit\sevdesk\phpclient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -60,13 +60,13 @@ class ModelPart implements ArrayAccess
         '_name' => 'string',
         '_part_number' => 'string',
         '_text' => 'string',
-        '_category' => '\ispserverfarm\sevdesk\phpclient\Model\ModelCategory',
+        '_category' => '\flagbit\sevdesk\phpclient\Model\ModelCategory',
         '_stock' => 'float',
-        '_unity' => '\ispserverfarm\sevdesk\phpclient\Model\ModelUnity',
+        '_unity' => '\flagbit\sevdesk\phpclient\Model\ModelUnity',
         '_price_partner' => 'float',
         '_price_customer' => 'float',
         '_price' => 'float',
-        '_second_unity' => '\ispserverfarm\sevdesk\phpclient\Model\ModelUnity',
+        '_second_unity' => '\flagbit\sevdesk\phpclient\Model\ModelUnity',
         '_second_unity_factor' => 'float',
         '_sev_client' => 'object',
         '_price_purchase' => 'float',
@@ -74,11 +74,11 @@ class ModelPart implements ArrayAccess
         '_image' => 'string',
         '_status' => 'int',
         '_characteristics' => 'string',
-        '_origin' => '\ispserverfarm\sevdesk\phpclient\Model\ModelPart',
+        '_origin' => '\flagbit\sevdesk\phpclient\Model\ModelPart',
         '_characteristics_string' => 'string',
         '_internal_comment' => 'string',
-        '_entry_type' => '\ispserverfarm\sevdesk\phpclient\Model\ModelEntryType',
-        '_accounting_type' => '\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType',
+        '_entry_type' => '\flagbit\sevdesk\phpclient\Model\ModelEntryType',
+        '_accounting_type' => '\flagbit\sevdesk\phpclient\Model\ModelAccountingType',
         '_price_net' => 'float',
         '_price_gross' => 'float'
     ];
@@ -445,7 +445,7 @@ class ModelPart implements ArrayAccess
 
     /**
      * Gets _category
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelCategory
+     * @return \flagbit\sevdesk\phpclient\Model\ModelCategory
      */
     public function getCategory()
     {
@@ -454,7 +454,7 @@ class ModelPart implements ArrayAccess
 
     /**
      * Sets _category
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelCategory $_category 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelCategory $_category
      * @return $this
      */
     public function setCategory($_category)
@@ -487,7 +487,7 @@ class ModelPart implements ArrayAccess
 
     /**
      * Gets _unity
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelUnity
+     * @return \flagbit\sevdesk\phpclient\Model\ModelUnity
      */
     public function getUnity()
     {
@@ -496,7 +496,7 @@ class ModelPart implements ArrayAccess
 
     /**
      * Sets _unity
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelUnity $_unity unity of the part, references Unity.php
+     * @param \flagbit\sevdesk\phpclient\Model\ModelUnity $_unity unity of the part, references Unity.php
      * @return $this
      */
     public function setUnity($_unity)
@@ -571,7 +571,7 @@ class ModelPart implements ArrayAccess
 
     /**
      * Gets _second_unity
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelUnity
+     * @return \flagbit\sevdesk\phpclient\Model\ModelUnity
      */
     public function getSecondUnity()
     {
@@ -580,7 +580,7 @@ class ModelPart implements ArrayAccess
 
     /**
      * Sets _second_unity
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelUnity $_second_unity a second unity which can be added to the part
+     * @param \flagbit\sevdesk\phpclient\Model\ModelUnity $_second_unity a second unity which can be added to the part
      * @return $this
      */
     public function setSecondUnity($_second_unity)
@@ -739,7 +739,7 @@ class ModelPart implements ArrayAccess
 
     /**
      * Gets _origin
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelPart
+     * @return \flagbit\sevdesk\phpclient\Model\ModelPart
      */
     public function getOrigin()
     {
@@ -748,7 +748,7 @@ class ModelPart implements ArrayAccess
 
     /**
      * Sets _origin
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelPart $_origin 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelPart $_origin
      * @return $this
      */
     public function setOrigin($_origin)
@@ -802,7 +802,7 @@ class ModelPart implements ArrayAccess
 
     /**
      * Gets _entry_type
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelEntryType
+     * @return \flagbit\sevdesk\phpclient\Model\ModelEntryType
      */
     public function getEntryType()
     {
@@ -811,7 +811,7 @@ class ModelPart implements ArrayAccess
 
     /**
      * Sets _entry_type
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelEntryType $_entry_type 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelEntryType $_entry_type
      * @return $this
      */
     public function setEntryType($_entry_type)
@@ -823,7 +823,7 @@ class ModelPart implements ArrayAccess
 
     /**
      * Gets _accounting_type
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType
+     * @return \flagbit\sevdesk\phpclient\Model\ModelAccountingType
      */
     public function getAccountingType()
     {
@@ -832,7 +832,7 @@ class ModelPart implements ArrayAccess
 
     /**
      * Sets _accounting_type
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType $_accounting_type 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelAccountingType $_accounting_type
      * @return $this
      */
     public function setAccountingType($_accounting_type)
@@ -935,10 +935,10 @@ class ModelPart implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace ispserverfarm\sevdesk\phpclient;
+namespace flagbit\sevdesk\phpclient;
 
 /**
  * ModelContactTest Class Doc Comment
@@ -35,7 +35,7 @@ namespace ispserverfarm\sevdesk\phpclient;
  * @category    Class */
 // * @description ModelContact
 /**
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     flagbit\sevdesk\phpclient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

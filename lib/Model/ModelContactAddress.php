@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  flagbit\sevdesk\phpclient
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\Model;
+namespace flagbit\sevdesk\phpclient\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelContactAddress Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     flagbit\sevdesk\phpclient
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,12 +56,12 @@ class ModelContactAddress implements ArrayAccess
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
         '_update' => '\DateTime',
-        '_contact' => '\ispserverfarm\sevdesk\phpclient\Model\ModelContact',
+        '_contact' => '\flagbit\sevdesk\phpclient\Model\ModelContact',
         '_street' => 'string',
         '_zip' => 'string',
         '_city' => 'string',
-        '_country' => '\ispserverfarm\sevdesk\phpclient\Model\ModelStaticCountry',
-        '_category' => '\ispserverfarm\sevdesk\phpclient\Model\ModelCategory',
+        '_country' => '\flagbit\sevdesk\phpclient\Model\ModelStaticCountry',
+        '_category' => '\flagbit\sevdesk\phpclient\Model\ModelCategory',
         '_name' => 'string',
         '_sev_client' => 'object',
         '_name2' => 'string',
@@ -276,7 +276,7 @@ class ModelContactAddress implements ArrayAccess
 
     /**
      * Gets _contact
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelContact
+     * @return \flagbit\sevdesk\phpclient\Model\ModelContact
      */
     public function getContact()
     {
@@ -285,7 +285,7 @@ class ModelContactAddress implements ArrayAccess
 
     /**
      * Sets _contact
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelContact $_contact the contact the address belongs to
+     * @param \flagbit\sevdesk\phpclient\Model\ModelContact $_contact the contact the address belongs to
      * @return $this
      */
     public function setContact($_contact)
@@ -360,7 +360,7 @@ class ModelContactAddress implements ArrayAccess
 
     /**
      * Gets _country
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelStaticCountry
+     * @return \flagbit\sevdesk\phpclient\Model\ModelStaticCountry
      */
     public function getCountry()
     {
@@ -369,7 +369,7 @@ class ModelContactAddress implements ArrayAccess
 
     /**
      * Sets _country
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelStaticCountry $_country 
+     * @param \flagbit\sevdesk\phpclient\Model\ModelStaticCountry $_country
      * @return $this
      */
     public function setCountry($_country)
@@ -381,7 +381,7 @@ class ModelContactAddress implements ArrayAccess
 
     /**
      * Gets _category
-     * @return \ispserverfarm\sevdesk\phpclient\Model\ModelCategory
+     * @return \flagbit\sevdesk\phpclient\Model\ModelCategory
      */
     public function getCategory()
     {
@@ -390,7 +390,7 @@ class ModelContactAddress implements ArrayAccess
 
     /**
      * Sets _category
-     * @param \ispserverfarm\sevdesk\phpclient\Model\ModelCategory $_category category of the address
+     * @param \flagbit\sevdesk\phpclient\Model\ModelCategory $_category category of the address
      * @return $this
      */
     public function setCategory($_category)
@@ -556,10 +556,10 @@ class ModelContactAddress implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\flagbit\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 
